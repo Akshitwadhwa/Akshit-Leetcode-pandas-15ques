@@ -22,4 +22,10 @@ def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
 
 ---------
 Q3--- 2884
-( In this we have to play with the data where we have to make a new salary columns with making 
+( In this we have to play with the data where we have to make a new salary columns with making it twice its orginal values
+  
+import pandas as pd
+
+def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
+    employees['salary']  = employees['salary'] * 2
+    return employees
