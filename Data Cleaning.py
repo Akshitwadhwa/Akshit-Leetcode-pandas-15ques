@@ -22,6 +22,7 @@ def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
 
 ---------
 Q3--- 2884
+( this is the modify columns question)
 ( In this we have to play with the data where we have to make a new salary columns with making it twice its orginal values
   
 import pandas as pd
@@ -29,3 +30,39 @@ import pandas as pd
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees['salary']  = employees['salary'] * 2
     return employees
+
+--------
+
+
+Q4--- 2885
+(This is the rename columns question)
+There is a table given with columns name such as id, first , last , age etc
+-- We HAVE TO RENAME THE GIVEN columns so we use the .rename command along with the name of columns
+
+import pandas as pd
+
+def renameColumns(students: pd.DataFrame) -> pd.DataFrame:
+    students.rename(columns = {'id':'student_id' , 'first': 'first_name' , 'last':'last_name' , 'age':'age_in_years'}, inplace=True)
+    return students
+
+
+-------
+
+Q5-----2886
+Change Data Type
+Here we have to change the datatype of a column given to us 
+The grade column is stored as float we have to convert it to int
+So the code will be 
+
+import pandas as pd
+
+def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
+    df = pd.DataFrame(students)
+    df['grade] = df[['grade']].astype(int)
+    return df
+
+
+
+
+
+
