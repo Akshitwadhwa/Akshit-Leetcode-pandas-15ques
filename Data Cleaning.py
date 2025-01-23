@@ -52,6 +52,7 @@ Q5-----2886
 Change Data Type
 Here we have to change the datatype of a column given to us 
 The grade column is stored as float we have to convert it to int
+
 So the code will be 
 
 import pandas as pd
@@ -60,6 +61,24 @@ def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
     df = pd.DataFrame(students)
     df['grade] = df[['grade']].astype(int)
     return df
+
+--------
+
+
+Q6----- 2887
+(This is the fill missing data question)
+We are going to use the fillna command in this question 
+So We have to find the correct way to find to do that
+The code will be 
+
+
+
+
+
+
+
+
+
 
 
 
