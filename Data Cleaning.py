@@ -71,6 +71,12 @@ We are going to use the fillna command in this question
 So We have to find the correct way to find to do that
 The code will be 
 
+import pandas as pd
+
+def fillMissingValues(table: pd.DataFrame) -> pd.DataFrame:
+    table['quantity'].fillna(0,inplace=True)
+    return table
+
 
 
 
