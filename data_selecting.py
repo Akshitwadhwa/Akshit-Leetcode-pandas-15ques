@@ -1,3 +1,4 @@
+
 Q1----2880 
 
 Here we have been given a table in which we have 3 columns called student_id, name, and age
@@ -15,4 +16,5 @@ Q2----2881
 
 In This question, we have to create a new column that has twice the values of the salary columns.
 Here we have the name and salary
+
     
